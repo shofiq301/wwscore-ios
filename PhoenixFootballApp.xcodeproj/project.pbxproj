@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B29D14E2E241EC50018E325 /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = 3B29D14D2E241EC50018E325 /* WrappingHStack */; };
+		3B7539ED2DB692A7001C52B5 /* SDWebImageSVGKitPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 3B7539EC2DB692A7001C52B5 /* SDWebImageSVGKitPlugin */; };
+		3B753B912DB7E091001C52B5 /* InfiniteScrollView in Frameworks */ = {isa = PBXBuildFile; productRef = 3B753B902DB7E091001C52B5 /* InfiniteScrollView */; };
+		3B753B932DB7E091001C52B5 /* XSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3B753B922DB7E091001C52B5 /* XSwiftUI */; };
+		852387302D58916000ED56B2 /* PhoenixUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8523872F2D58916000ED56B2 /* PhoenixUI */; };
+		85E958622D7D9D8900462D6C /* APIFootball in Frameworks */ = {isa = PBXBuildFile; productRef = 85E958612D7D9D8900462D6C /* APIFootball */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8599BC0B2D57EA15008E791F /* PhoenixFootballApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoenixFootballApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85B9EA582D58864700438843 /* PhoenixUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = PhoenixUI; sourceTree = "<group>"; };
+		85E958602D7D9D5500462D6C /* APIFootball */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = APIFootball; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3B4C70A52D79F73C00D92A45 /* Exceptions for "PhoenixFootballApp" folder in "PhoenixFootballApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8599BC0A2D57EA15008E791F /* PhoenixFootballApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		8599BC0D2D57EA15008E791F /* PhoenixFootballApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3B4C70A52D79F73C00D92A45 /* Exceptions for "PhoenixFootballApp" folder in "PhoenixFootballApp" target */,
+			);
+			path = PhoenixFootballApp;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8599BC082D57EA15008E791F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B753B932DB7E091001C52B5 /* XSwiftUI in Frameworks */,
+				852387302D58916000ED56B2 /* PhoenixUI in Frameworks */,
+				3B7539ED2DB692A7001C52B5 /* SDWebImageSVGKitPlugin in Frameworks */,
+				3B753B912DB7E091001C52B5 /* InfiniteScrollView in Frameworks */,
+				3B29D14E2E241EC50018E325 /* WrappingHStack in Frameworks */,
+				85E958622D7D9D8900462D6C /* APIFootball in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8523872E2D58916000ED56B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8599BC022D57EA15008E791F = {
+			isa = PBXGroup;
+			children = (
+				85B9EA582D58864700438843 /* PhoenixUI */,
+				85E958602D7D9D5500462D6C /* APIFootball */,
+				8599BC0D2D57EA15008E791F /* PhoenixFootballApp */,
+				8523872E2D58916000ED56B2 /* Frameworks */,
+				8599BC0C2D57EA15008E791F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8599BC0C2D57EA15008E791F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8599BC0B2D57EA15008E791F /* PhoenixFootballApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8599BC0A2D57EA15008E791F /* PhoenixFootballApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8599BC192D57EA17008E791F /* Build configuration list for PBXNativeTarget "PhoenixFootballApp" */;
+			buildPhases = (
+				8599BC072D57EA15008E791F /* Sources */,
+				8599BC082D57EA15008E791F /* Frameworks */,
+				8599BC092D57EA15008E791F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8599BC0D2D57EA15008E791F /* PhoenixFootballApp */,
+			);
+			name = PhoenixFootballApp;
+			packageProductDependencies = (
+				8523872F2D58916000ED56B2 /* PhoenixUI */,
+				85E958612D7D9D8900462D6C /* APIFootball */,
+				3B7539EC2DB692A7001C52B5 /* SDWebImageSVGKitPlugin */,
+				3B753B902DB7E091001C52B5 /* InfiniteScrollView */,
+				3B753B922DB7E091001C52B5 /* XSwiftUI */,
+				3B29D14D2E241EC50018E325 /* WrappingHStack */,
+			);
+			productName = PhoenixFootballApp;
+			productReference = 8599BC0B2D57EA15008E791F /* PhoenixFootballApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8599BC032D57EA15008E791F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					8599BC0A2D57EA15008E791F = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = 8599BC062D57EA15008E791F /* Build configuration list for PBXProject "PhoenixFootballApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8599BC022D57EA15008E791F;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3B7539EB2DB692A7001C52B5 /* XCRemoteSwiftPackageReference "SDWebImageSVGKitPlugin" */,
+				3B753B8F2DB7E091001C52B5 /* XCRemoteSwiftPackageReference "XSwiftUI" */,
+				3B29D14C2E241EC50018E325 /* XCRemoteSwiftPackageReference "WrappingHStack" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8599BC0C2D57EA15008E791F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8599BC0A2D57EA15008E791F /* PhoenixFootballApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8599BC092D57EA15008E791F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8599BC072D57EA15008E791F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8599BC172D57EA17008E791F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8599BC182D57EA17008E791F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8599BC1A2D57EA17008E791F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PhoenixFootballApp/Resources/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhoenixFootballApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Phoenix Foodball";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phoenix.PhoenixFootballApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8599BC1B2D57EA17008E791F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PhoenixFootballApp/Resources/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhoenixFootballApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Phoenix Foodball";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phoenix.PhoenixFootballApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8599BC062D57EA15008E791F /* Build configuration list for PBXProject "PhoenixFootballApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8599BC172D57EA17008E791F /* Debug */,
+				8599BC182D57EA17008E791F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8599BC192D57EA17008E791F /* Build configuration list for PBXNativeTarget "PhoenixFootballApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8599BC1A2D57EA17008E791F /* Debug */,
+				8599BC1B2D57EA17008E791F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3B29D14C2E241EC50018E325 /* XCRemoteSwiftPackageReference "WrappingHStack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dkk/WrappingHStack.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.11;
+			};
+		};
+		3B7539EB2DB692A7001C52B5 /* XCRemoteSwiftPackageReference "SDWebImageSVGKitPlugin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSVGKitPlugin.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.0;
+			};
+		};
+		3B753B8F2DB7E091001C52B5 /* XCRemoteSwiftPackageReference "XSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/shawon1fb/XSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3B29D14D2E241EC50018E325 /* WrappingHStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B29D14C2E241EC50018E325 /* XCRemoteSwiftPackageReference "WrappingHStack" */;
+			productName = WrappingHStack;
+		};
+		3B7539EC2DB692A7001C52B5 /* SDWebImageSVGKitPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B7539EB2DB692A7001C52B5 /* XCRemoteSwiftPackageReference "SDWebImageSVGKitPlugin" */;
+			productName = SDWebImageSVGKitPlugin;
+		};
+		3B753B902DB7E091001C52B5 /* InfiniteScrollView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B753B8F2DB7E091001C52B5 /* XCRemoteSwiftPackageReference "XSwiftUI" */;
+			productName = InfiniteScrollView;
+		};
+		3B753B922DB7E091001C52B5 /* XSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B753B8F2DB7E091001C52B5 /* XCRemoteSwiftPackageReference "XSwiftUI" */;
+			productName = XSwiftUI;
+		};
+		8523872F2D58916000ED56B2 /* PhoenixUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PhoenixUI;
+		};
+		85E958612D7D9D8900462D6C /* APIFootball */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = APIFootball;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8599BC032D57EA15008E791F /* Project object */;
+}
