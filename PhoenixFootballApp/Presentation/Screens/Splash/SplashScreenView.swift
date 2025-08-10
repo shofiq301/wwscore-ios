@@ -12,16 +12,16 @@ struct SplashScreenView: View {
     var body: some View {
         ZStack(alignment: .center) {
             VStack {
-                Image("Splash/splashTitle")
-                    .padding(.top)
-                Spacer()
-                    .frame(height: 96)
-                Image("Splash/splashLogo")
-                    .padding(.top)
-                
-            }.frame(maxWidth: .infinity, maxHeight: .infinity)
-                .background(.splashBackground)
-        }.ignoresSafeArea()
+                Image("Splash/splash-icon")
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+            .background {
+                Image("Splash/Splash screen")
+                    .resizable()
+                    .scaledToFill()
+            }
+        }
+        .edgesIgnoringSafeArea(.all)
     }
 }
 

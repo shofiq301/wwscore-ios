@@ -4,19 +4,19 @@
 //
 //  Created by Md Shofiulla on 9/3/25.
 //
+
 import Foundation
-import Combine
+
 final class OnboardingViewModel: ObservableObject {
     var onBoardingData: [OnboadingViewItem] = []
     @Published var selectedTab = 0
     @Published var tabState: Bool = false
-    
-    var cancellables = Set<AnyCancellable>()
-    
+        
     init() {
-        self.onBoardingData = OnboadingViewItem.items
+        self.onBoardingData = OnboadingViewItem.onboardItems
         decideTabState()
     }
+    
     func decideTabState() {
         if selectedTab == 0 {
             tabState = false

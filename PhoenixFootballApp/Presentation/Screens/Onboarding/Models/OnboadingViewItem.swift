@@ -17,6 +17,7 @@ struct OnboadingViewItem: Identifiable {
         self.image = image
     }
 }
+
 extension OnboadingViewItem {
     static let items: [OnboadingViewItem] = [
         .init(title: "Welcome to Footy Strike!",
@@ -28,5 +29,17 @@ extension OnboadingViewItem {
         .init(title: "Never Miss a Match Again",
               text: "Get instant updates, live scores, and notifications for all your favorite games",
               image: "img2"),
+    ]
+    
+    static let onboardItems: [OnboadingViewItem] = [
+        .init(title: "Welcome to \nWW Scores",
+              text: "Your One Stop Live Sports Scores that tailored to your favorite sports",
+              image: "onboard welcome01"),
+        .init(title: "Choose Your \nFavorites Sports",
+              text: "Pick and follow your favorites sports. Later this will be displayed as your default page.",
+              image: "onboard choice02"),
+        .init(title: "Now Enjoy Your \nSports",
+              text: "Get instant updates, live scores, and notifications for all your favorite sports games",
+              image: "onboard livescore03"),
     ]
 }

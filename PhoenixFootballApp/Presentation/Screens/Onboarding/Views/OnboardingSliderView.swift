@@ -6,7 +6,9 @@
 //
 import SwiftUI
 struct OnboardingSliderView: View {
+    
     var sliderItem: OnboadingViewItem
+    
     var body: some View {
         VStack(spacing: 16) {
             Text(sliderItem.title)
@@ -27,6 +29,7 @@ struct OnboardingSliderView: View {
                 .frame(height: 212)
             
             
-        }.padding()
+        }
+        .padding()
     }
 }
