@@ -34,7 +34,7 @@ struct OnboardingView: View {
                 }
                 .tabViewStyle(.page(indexDisplayMode: .never))
                 .indexViewStyle(.page(backgroundDisplayMode: .never))
-                .onChange(of: viewModel.selectedTab) {  newValue in
+                .onChange(of: viewModel.selectedTab) {  _, newValue in
                     viewModel.decideTabState()
                 }
                 
