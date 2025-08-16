@@ -32,9 +32,9 @@ actor TeamRepository: ITeamRepository{
             
             let query = ["id": "\(id)"]
             
-            let res: AppResponse<GenericNetworkModel<TeamDetailsResponse>> = try await client.get("teams", headers: [:], query: query)
+            let res: AppResponse<TeamDetailsResponse> = try await client.get("teams", headers: [:], query: query)
             
-            if let l = res.payload?.data?.response{
+            if let l = res.payload?.response{
                 list = l
             }
             return list
@@ -73,9 +73,9 @@ actor TeamRepository: ITeamRepository{
             let query:[String:String] = ["team": "\(id)"]
             
             
-            let res:AppResponse<GenericNetworkModel<TeamSquadsResponse>> = try await client.get("players/squads", headers: [:], query: query)
+            let res:AppResponse<TeamSquadsResponse> = try await client.get("players/squads", headers: [:], query: query)
             
-            if let l = res.payload?.data?.response.first?.players{
+            if let l = res.payload?.response.first?.players{
                 list = l
             }
             return list

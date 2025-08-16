@@ -27,10 +27,10 @@ actor StatisticsRepository: IStatisticsRepository{
         do{
             var list: [StatisticsResponse] = []
             
-            let res: AppResponse<GenericNetworkModel<TeamStaisticsResponse>> = try await client.get("fixtures/statistics", headers: [:], query: ["fixture":"\(fixture)"])
+            let res: AppResponse<TeamStaisticsResponse> = try await client.get("fixtures/statistics", headers: [:], query: ["fixture":"\(fixture)"])
             
          
-            if let l = res.payload?.data?.response{
+            if let l = res.payload?.response{
                 list = l
             }
             

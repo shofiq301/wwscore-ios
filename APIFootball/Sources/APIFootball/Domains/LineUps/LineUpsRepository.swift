@@ -28,8 +28,8 @@ actor LineUpRepository: ILineUPRepository{
         var list:[LineUpsData] = []
         
         do{
-            let res: AppResponse<GenericNetworkModel<FixtureLineUPResponse>> =  try await  client.get("fixtures/lineups", headers: [:], query: ["fixture":"\(fixtureId)"])
-            if let l = res.payload?.data?.response{
+            let res: AppResponse<FixtureLineUPResponse> =  try await  client.get("fixtures/lineups", headers: [:], query: ["fixture":"\(fixtureId)"])
+            if let l = res.payload?.response{
                 list = l
             }
         }

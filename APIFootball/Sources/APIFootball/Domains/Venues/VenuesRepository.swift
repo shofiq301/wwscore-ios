@@ -30,9 +30,9 @@ actor VenuesRepository: IVenuesRepository{
         do{
             
             let query = ["id": "\(id)"]
-            let res: AppResponse<GenericNetworkModel<VenuesResponse>>  =  try await  client.get("venues", headers: [:], query: query)
+            let res: AppResponse<VenuesResponse>  =  try await  client.get("venues", headers: [:], query: query)
             
-            if let venue =  res.payload?.data?.response.first{
+            if let venue =  res.payload?.response.first{
                 return venue
             }
             
@@ -45,9 +45,9 @@ actor VenuesRepository: IVenuesRepository{
         do{
             var list : [VenueData] = []
             let query = ["country": "\(name)"]
-            let res: AppResponse<GenericNetworkModel<VenuesResponse>>  =  try await  client.get("venues", headers: [:], query: query)
+            let res: AppResponse<VenuesResponse>  =  try await  client.get("venues", headers: [:], query: query)
             
-            if let venues =  res.payload?.data?.response{
+            if let venues =  res.payload?.response{
                 list =  venues
             }
             

@@ -27,9 +27,10 @@ actor FixtureKeyEventRepository: IFixtureKeyEventRepository{
             
             let query:[String:String] = ["fixture":"\(fixture)"]
             
-            let res:AppResponse<GenericNetworkModel<FixtureKeyEventsResponse>> = try await client.get("fixtures/events", headers: [:], query: query)
+//            let res:AppResponse<GenericNetworkModel<FixtureKeyEventsResponse>> = try await client.get("fixtures/events", headers: [:], query: query)
+            let res:AppResponse<FixtureKeyEventsResponse> = try await client.get("fixtures/events", headers: [:], query: query)
             
-            if let l = res.payload?.data?.response {
+            if let l = res.payload?.response {
                 list  = l
             }
 

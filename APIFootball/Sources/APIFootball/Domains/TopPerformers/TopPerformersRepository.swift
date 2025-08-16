@@ -30,9 +30,9 @@ actor TopPerformersRepository: ITopPerformersRepository{
                 "league": "\(league)",
                 "season": "\(season)"
             ]
-            let res:AppResponse<GenericNetworkModel<TopPerformersResponse>>  =  try await client.get("players/topscorers", headers: [:], query: query)
+            let res:AppResponse<TopPerformersResponse>  =  try await client.get("players/topscorers", headers: [:], query: query)
             
-            if let l = res.payload?.data?.response{
+            if let l = res.payload?.response{
                 list = l
             }
             
@@ -49,9 +49,9 @@ actor TopPerformersRepository: ITopPerformersRepository{
                 "league": "\(league)",
                 "season": "\(season)"
             ]
-            let res:AppResponse<GenericNetworkModel<TopPerformersResponse>>  =  try await client.get("players/topassists", headers: [:], query: query)
+            let res:AppResponse<TopPerformersResponse>  =  try await client.get("players/topassists", headers: [:], query: query)
             
-            if let l = res.payload?.data?.response{
+            if let l = res.payload?.response{
                 list = l
             }
             

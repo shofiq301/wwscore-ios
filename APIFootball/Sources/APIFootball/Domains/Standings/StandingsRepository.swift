@@ -33,10 +33,10 @@ actor StandingsRepository: IStandingRepository {
         "league": "\(league)",
       ]
 
-      let res: AppResponse<GenericNetworkModel<LeagueStandingsResponse>> = try await client.get(
+      let res: AppResponse<LeagueStandingsResponse> = try await client.get(
         "standings", headers: [:], query: query)
 
-      if let data = res.payload?.data?.response.first?.league.standings.first {
+      if let data = res.payload?.response.first?.league.standings.first {
         list = data
       }
 
@@ -55,10 +55,10 @@ actor StandingsRepository: IStandingRepository {
         "team": "\(team)",
       ]
 
-      let res: AppResponse<GenericNetworkModel<LeagueStandingsResponse>> = try await client.get(
+      let res: AppResponse<LeagueStandingsResponse> = try await client.get(
         "standings", headers: [:], query: query)
 
-      if let data = res.payload?.data?.response {
+      if let data = res.payload?.response {
         list = data
       }
 
