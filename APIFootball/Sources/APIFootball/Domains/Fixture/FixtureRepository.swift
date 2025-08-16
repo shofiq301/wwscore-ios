@@ -54,10 +54,11 @@ actor FixtureRepository:IFixtureRepository{
             let d = date.string(withFormat: "yyyy-MM-dd")
             //let d = "2023-08-10"
             //  print(d)
-            let res: AppResponse<GenericNetworkModel<FixtureResponse>> =  try await client.get("fixtures", headers: [:], query: ["date": d] )
+//            let res: AppResponse<GenericNetworkModel<FixtureResponse>> =  try await client.get("fixtures", headers: [:], query: ["date": d] )
+            let res: AppResponse<FixtureResponse> =  try await client.get("fixtures", headers: [:], query: ["date": d] )
             
             
-            if let mList = res.payload?.data?.response {
+            if let mList = res.payload?.response {
                 matchList = mList
             }
             
@@ -65,7 +66,7 @@ actor FixtureRepository:IFixtureRepository{
             var page: Int = 0
             var totalPages: Int = 0
             
-            if let p = res.payload?.data?.paging{
+            if let p = res.payload?.paging{
                 page = p.current
                 totalPages = p.total
             }
@@ -83,10 +84,11 @@ actor FixtureRepository:IFixtureRepository{
             //["date":"2023-07-07"]
             //let d = date.string(withFormat: "yyyy-MM-dd")
             
-            let res: AppResponse<GenericNetworkModel<FixtureResponse>> =  try await client.get("fixtures", headers: [:], query: ["id": "\(id)"] )
+//            let res: AppResponse<GenericNetworkModel<FixtureResponse>> =  try await client.get("fixtures", headers: [:], query: ["id": "\(id)"] )
+            let res: AppResponse<FixtureResponse> =  try await client.get("fixtures", headers: [:], query: ["id": "\(id)"] )
             
             
-            if let mList = res.payload?.data?.response {
+            if let mList = res.payload?.response {
                 matchList = mList
             }
             
@@ -94,7 +96,7 @@ actor FixtureRepository:IFixtureRepository{
             var page: Int = 0
             var totalPages: Int = 0
             
-            if let p = res.payload?.data?.paging{
+            if let p = res.payload?.paging{
                 page = p.current
                 totalPages = p.total
             }
@@ -111,10 +113,11 @@ actor FixtureRepository:IFixtureRepository{
         
         do {
             
-            let res: AppResponse<GenericNetworkModel<FixtureResponse>> =  try await client.get("fixtures", headers: [:], query: ["live": "all"] )
+//            let res: AppResponse<GenericNetworkModel<FixtureResponse>> =  try await client.get("fixtures", headers: [:], query: ["live": "all"] )
+            let res: AppResponse<FixtureResponse> =  try await client.get("fixtures", headers: [:], query: ["live": "all"] )
             
             
-            if let mList = res.payload?.data?.response {
+            if let mList = res.payload?.response {
                 matchList = mList
             }
             
@@ -122,7 +125,7 @@ actor FixtureRepository:IFixtureRepository{
             var page: Int = 0
             var totalPages: Int = 0
             
-            if let p = res.payload?.data?.paging{
+            if let p = res.payload?.paging{
                 page = p.current
                 totalPages = p.total
             }
@@ -139,10 +142,11 @@ actor FixtureRepository:IFixtureRepository{
         
         do {
             
-            let res: AppResponse<GenericNetworkModel<FixtureResponse>> =  try await client.get("fixtures/headtohead", headers: [:], query: ["h2h": "\(homeTeam)-\(awayTeam)"] )
+//            let res: AppResponse<GenericNetworkModel<FixtureResponse>> =  try await client.get("fixtures/headtohead", headers: [:], query: ["h2h": "\(homeTeam)-\(awayTeam)"] )
+            let res: AppResponse<FixtureResponse> =  try await client.get("fixtures/headtohead", headers: [:], query: ["h2h": "\(homeTeam)-\(awayTeam)"] )
             
             
-            if let mList = res.payload?.data?.response {
+            if let mList = res.payload?.response {
                 matchList = mList
             }
             
@@ -150,7 +154,7 @@ actor FixtureRepository:IFixtureRepository{
             var page: Int = 0
             var totalPages: Int = 0
             
-            if let p = res.payload?.data?.paging{
+            if let p = res.payload?.paging{
                 page = p.current
                 totalPages = p.total
             }
@@ -172,10 +176,10 @@ actor FixtureRepository:IFixtureRepository{
                 "season":"\(season)"
             ]
             
-            let res: AppResponse<GenericNetworkModel<FixtureResponse>> =  try await client.get("fixtures", headers: [:], query: query)
+            let res: AppResponse<FixtureResponse> =  try await client.get("fixtures", headers: [:], query: query)
             
             
-            if let mList = res.payload?.data?.response {
+            if let mList = res.payload?.response {
                 matchList = mList
             }
             
@@ -183,7 +187,7 @@ actor FixtureRepository:IFixtureRepository{
             var page: Int = 0
             var totalPages: Int = 0
             
-            if let p = res.payload?.data?.paging{
+            if let p = res.payload?.paging{
                 page = p.current
                 totalPages = p.total
             }
@@ -200,17 +204,18 @@ actor FixtureRepository:IFixtureRepository{
             //["date":"2023-07-07"]
             //let d = date.string(withFormat: "yyyy-MM-dd")
             
-            let res: AppResponse<GenericNetworkModel<FixtureResponse>> =  try await client.get("fixtures", headers: [:], query: ["team": "\(id)" ,"season": "\(season)" ] )
+//            let res: AppResponse<GenericNetworkModel<FixtureResponse>> =  try await client.get("fixtures", headers: [:], query: ["team": "\(id)" ,"season": "\(season)" ] )
+            let res: AppResponse<FixtureResponse> =  try await client.get("fixtures", headers: [:], query: ["team": "\(id)" ,"season": "\(season)" ] )
             
             
-            if let mList = res.payload?.data?.response {
+            if let mList = res.payload?.response {
                 matchList = mList
             }
             
             var page: Int = 0
             var totalPages: Int = 0
             
-            if let p = res.payload?.data?.paging{
+            if let p = res.payload?.paging{
                 page = p.current
                 totalPages = p.total
             }
@@ -228,17 +233,18 @@ actor FixtureRepository:IFixtureRepository{
             //["date":"2023-07-07"]
             //let d = date.string(withFormat: "yyyy-MM-dd")
             
-            let res: AppResponse<GenericNetworkModel<FixtureResponse>> =  try await client.get("fixtures", headers: [:], query: ["team": "\(id)"  , "last": "\(last)"] )
+//            let res: AppResponse<GenericNetworkModel<FixtureResponse>> =  try await client.get("fixtures", headers: [:], query: ["team": "\(id)"  , "last": "\(last)"] )
+            let res: AppResponse<FixtureResponse> =  try await client.get("fixtures", headers: [:], query: ["team": "\(id)"  , "last": "\(last)"] )
             
             
-            if let mList = res.payload?.data?.response {
+            if let mList = res.payload?.response {
                 matchList = mList
             }
             
             var page: Int = 0
             var totalPages: Int = 0
             
-            if let p = res.payload?.data?.paging{
+            if let p = res.payload?.paging{
                 page = p.current
                 totalPages = p.total
             }
@@ -256,17 +262,17 @@ actor FixtureRepository:IFixtureRepository{
             
             var matchList: [FixtureDataResponse] = []
             
-            let res: AppResponse<GenericNetworkModel<FixtureResponse>> =  try await client.get("fixtures", headers: [:], query: ["team": "\(id)"  , "next": "\(next)"] )
+            let res: AppResponse<FixtureResponse> =  try await client.get("fixtures", headers: [:], query: ["team": "\(id)"  , "next": "\(next)"] )
             
             
-            if let mList = res.payload?.data?.response {
+            if let mList = res.payload?.response {
                 matchList = mList
             }
             
             var page: Int = 0
             var totalPages: Int = 0
             
-            if let p = res.payload?.data?.paging{
+            if let p = res.payload?.paging{
                 page = p.current
                 totalPages = p.total
             }

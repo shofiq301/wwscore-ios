@@ -27,10 +27,10 @@ actor TrophiesRepository: ITrophiesRepository {
 
       let query = ["player": "\(playerID)"]
 
-      let res: AppResponse<GenericNetworkModel<TrophiesDataClass>> = try await client.get(
+      let res: AppResponse<TrophiesDataClass> = try await client.get(
         "trophies", headers: [:], query: query)
 
-      if let l = res.payload?.data?.response {
+      if let l = res.payload?.response {
         list = l
       }
       return list

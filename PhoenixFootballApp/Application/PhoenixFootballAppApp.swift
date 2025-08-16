@@ -62,9 +62,9 @@ final class Initialazer {
   @MainActor
   private static func registerBaseUrl() {
     HTTPClient.enableResponsePrint(label: .notOk)
-    HTTPClient.registerBaseUrl(url: "https://api.instacric.live/api/r-f/v3/")
+    HTTPClient.registerBaseUrl(url: "https://v3.football.api-sports.io/")
     ApiKeyManager.addSecret(
-      key: "x-api-key", value: "d0c[12qzFF?MBSRPQ)556PDfEde8kGOsjc2||@bM:qr[gtPEW256Qew")
+      key: "x-rapidapi-key", value: "ae862b82c9985c0be8090caa494a32bc")
 
   }
     

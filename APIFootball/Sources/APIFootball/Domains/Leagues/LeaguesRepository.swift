@@ -31,9 +31,9 @@ actor LeaguesRepository: ILeaguesRepository{
         do{
             
             let query = ["id" : "\(id)" ]
-            let res:AppResponse<GenericNetworkModel<LeaguesResponse>> =   try await client.get("leagues", headers: [:], query: query)
+            let res:AppResponse<LeaguesResponse> =   try await client.get("leagues", headers: [:], query: query)
             
-            if let league = res.payload?.data?.response.first{
+            if let league = res.payload?.response.first{
                 return league
             }
             
@@ -46,12 +46,13 @@ actor LeaguesRepository: ILeaguesRepository{
         do{
             var leagues:[LeagueData] = []
            
-            let res:AppResponse<GenericNetworkModel<LeaguesResponse>> =   try await client.get("leagues", headers: [:], query: [:])
+            let res:AppResponse<LeaguesResponse> =   try await client.get("leagues", headers: [:], query: [:])
             
-            if let league = res.payload?.data?.response{
+            if let league = res.payload?.response{
                 leagues.append(contentsOf: league)
             }
             
+            print("league count \(leagues.count)")
            return leagues
         }
     }

@@ -35,11 +35,11 @@ actor PlayerProfileRepository: IPlayerProfileRepository {
     do {
         var list: [PlayerModel] = []
         
-        let res: AppResponse<GenericNetworkModel<PlayerDataClass>> = try await client.get("players/profiles", headers: [:], query: [
+        let res: AppResponse<PlayerDataClass> = try await client.get("players/profiles", headers: [:], query: [
             //"season":"\(season)" ,
             "player": "\(playerID)"])
      
-        if let l = res.payload?.data?.response{
+        if let l = res.payload?.response{
             list = l.map({$0.player})
         }
         
@@ -51,9 +51,9 @@ actor PlayerProfileRepository: IPlayerProfileRepository {
     do {
         var list: [PlayersStatisticsResponseModel] = []
         
-        let res: AppResponse<GenericNetworkModel<PlayersStatisticsDataClass>> = try await client.get("players", headers: [:], query: ["season":"\(season)" , "id": "\(playerID)"])
+        let res: AppResponse<PlayersStatisticsDataClass> = try await client.get("players", headers: [:], query: ["season":"\(season)" , "id": "\(playerID)"])
      
-        if let l = res.payload?.data?.response{
+        if let l = res.payload?.response{
             list = l
         }
         
@@ -65,9 +65,9 @@ actor PlayerProfileRepository: IPlayerProfileRepository {
         do {
             var seasons: [Int] = []
             
-            let res: AppResponse<GenericNetworkModel<PlayersSeasonDataClass>> = try await client.get("players/seasons", headers: [:], query: [ "player": "\(playerID)"])
+            let res: AppResponse<PlayersSeasonDataClass> = try await client.get("players/seasons", headers: [:], query: [ "player": "\(playerID)"])
          
-            if let l = res.payload?.data?.response{
+            if let l = res.payload?.response{
                 seasons = l
             }
             
@@ -78,11 +78,11 @@ actor PlayerProfileRepository: IPlayerProfileRepository {
     func getPlayerSquads(playerID: Int) async throws -> [PlayersSquadsData] {
         var list: [PlayersSquadsData] = []
         
-        let res: AppResponse<GenericNetworkModel<PlayersSquadsDataClass>> = try await client.get("players/squads", headers: [:], query: [
+        let res: AppResponse<PlayersSquadsDataClass> = try await client.get("players/squads", headers: [:], query: [
             //"season":"\(season)" ,
             "player": "\(playerID)"])
      
-        if let l = res.payload?.data?.response{
+        if let l = res.payload?.response{
             list = l
         }
         
